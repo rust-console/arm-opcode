@@ -1,0 +1,14 @@
+[package]
+name = "arm-opcode"
+description = "Opcode manipulation for ARM and Thumb code."
+version = "0.0.1"
+authors = ["Lokathor <zefria@gmail.com>"]
+repository = "https://github.com/rust-console/arm-opcode"
+readme = "README.md"
+keywords = ["arm", "opcode"]
+edition = "2018"
+license = "0BSD"
+
+#publish = false
+
+[dependencies]
