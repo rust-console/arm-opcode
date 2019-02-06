@@ -2,7 +2,7 @@ use arm_opcode::*;
 
 #[test]
 fn test_cond_mask() {
-  for i in 0 .. 16 {
+  for i in 0..16 {
     assert_eq!(Cond::from_mask(i).to_mask(), i);
   }
 }
@@ -16,7 +16,7 @@ fn test_cond_mask_panic() {
 #[test]
 fn test_mnemonic() {
   // note: 1 less than full, EXT has no real mnemonic
-  for i in 0 .. 15 {
+  for i in 0..15 {
     let c = Cond::from_mask(i);
     assert_eq!(Cond::from_mnemonic(c.to_mnemonic()), c);
   }
